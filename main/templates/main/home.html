@@ -1,14 +1,18 @@
-{% extends 'base.html' %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block meta %}
-<title>Hello, world!</title>
-{% endblock meta %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% block meta %}
+  {% endblock meta %}
+</head>
 
-{% block content %}
-  <center>
+<body>
+    <center>
     <p><img src="{% static 'img/zahfan.jpeg' %}" style="height:7cm"></p>
-    <h1 style="color:black">Pernekalkan Saya</h1>
+    <h1 style="color:black">Perkanalkan Saya</h1>
     <h2 style="color:black"><font face="comic sans ms">M. Zahrul Fanani 181810101049 </font><br></h2>
     <h2 style="color:black"><font face="comic sans ms">FAKULTAS MATEMATIKA DAN ILMU PENGETAHUAN ALAM </font><br></h2>
     <h2 style="color:black"><font face="comic sans ms">UNIVERSITAS JEMBER </font><br></h2>
@@ -16,4 +20,8 @@
     <marquee behavior="scroll" direction="left" scrollamount="20">Universitas Jember </marquee>
     <marquee behavior="scroll" direction="right" scrollamount="50">Fakultas MIPA </marquee>
   </center>
+</body>
+
+</html>
+
 
